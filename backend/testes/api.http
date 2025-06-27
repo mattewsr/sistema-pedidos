@@ -1,0 +1,67 @@
+### Criar cliente
+POST http://localhost:3000/clientes
+Content-Type: application/json
+
+{
+  "nome": "João Silva",
+  "cpf_cnpj": "123.456.789-00",
+  "telefone": "11 99999-9999",
+  "email": "joao.silva@example.com",
+  "endereco": "Rua das Flores, 123"
+}
+
+### Listar todos os clientes
+GET http://localhost:3000/clientes
+
+### Obter cliente por ID
+GET http://localhost:3000/clientes/1
+
+### Atualizar cliente
+PUT http://localhost:3000/clientes/1
+Content-Type: application/json
+
+{
+  "nome": "João da Silva",
+  "cpf_cnpj": "123.456.789-00",
+  "telefone": "11 98888-7777",
+  "email": "joao.novo@example.com",
+  "endereco": "Av. Central, 456"
+}
+
+### Deletar cliente
+DELETE http://localhost:3000/clientes/1
+
+
+
+### Criar produto
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Arroz 5kg",
+  "descricao": "Arroz branco tipo 1",
+  "preco": 25.90,
+  "estoque": 50,
+  "categoria": "Alimentos"
+}
+
+### Listar todos os produtos
+GET http://localhost:3000/produtos
+
+### Obter produto por ID
+GET http://localhost:3000/produtos/1
+
+### Atualizar produto
+PUT http://localhost:3000/produtos/1
+Content-Type: application/json
+
+{
+  "nome": "Arroz Integral 5kg",
+  "descricao": "Arroz integral tipo 1",
+  "preco": 29.90,
+  "estoque": 40,
+  "categoria": "Alimentos"
+}
+
+### Deletar produto
+DELETE http://localhost:3000/produtos/1
